@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+import Logo from '../images/logo.png';
+---
+
+<nav
+	class="text-white flex h-16 backdrop-filter backdrop-blur-md
+	  bg-opacity-20 border-b border-[#333333] sticky top-0"
+>
+	<a href="/">
+		<div class="flex gap-2 items-center h-full ml-5">
+			<Image
+				alt="logo of repohistory"
+				width="30px"
+				src={Logo}
+			/>
+			<h1 class="text-2xl font-bold ">
+				Repohistory
+			</h1>
+		</div>
+	</a>
+</nav>
