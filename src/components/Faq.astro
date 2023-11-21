@@ -9,8 +9,8 @@ import GitHub from '../components/Icons/GitHub.astro';
 </h1>
 <div class="mt-10 flex flex-col text-white items-center">
   <details class="w-full px-5 md:px-0 md:w-[42rem] border-y border-y-[#303031] py-5">
-    <summary class="cursor-pointer text-lg">
-      <b>Q1: Why is there a limit of tracking only two repositories per user?</b>
+    <summary class="cursor-pointer text-lg font-medium">
+      Q1: Why is there a limit of tracking only two repositories per user?
     </summary>
     <div class="mt-5 px-5 text-[#CCCCCC]">
       We're using Supabase's free plan, which has certain usage limits. The two-repo limit helps us stay within these quotas. As Repohistory grows, we plan to revisit and potentially increase this limit based on our capacity and project's expansion.
@@ -18,8 +18,8 @@ import GitHub from '../components/Icons/GitHub.astro';
   </details>
 
   <details class="w-full px-5 md:px-0 md:w-[42rem] border-y border-y-[#303031] py-5">
-    <summary class="cursor-pointer text-lg">
-      <b>Q2: What permissions does Repohistory require on my GitHub account?</b>
+    <summary class="cursor-pointer text-lg font-medium">
+      Q2: What permissions does Repohistory require on my GitHub account?
     </summary>
     <div class="mt-5 px-5 text-[#CCCCCC]">
       Repohistory uses GitHub Apps to request specific permissions from users. We require read access to <a href="https://docs.github.com/en/rest/overview/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-metadata" class="text-[#62C3F8] underline" target="_blank">Metadata</a> for basic information, and read access to <a href="https://docs.github.com/en/rest/overview/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-administration" class="text-[#62C3F8] underline" target="_blank">Administration</a> for traffic data.
@@ -27,8 +27,8 @@ import GitHub from '../components/Icons/GitHub.astro';
   </details>
 
   <details class="w-full px-5 md:px-0 md:w-[42rem] border-y border-y-[#303031] py-5">
-    <summary class="cursor-pointer text-lg">
-      <b>Q3: Can Repohistory retrieve data older than 14 days?</b>
+    <summary class="cursor-pointer text-lg font-medium">
+      Q3: Can Repohistory retrieve data older than 14 days?
     </summary>
     <div class="mt-5 px-5 text-[#CCCCCC]">
       No, GitHub provides access to data only for the past 14 days. However, Repohistory will accumulate and make available data extending beyond the 14-day limit from your first login.
