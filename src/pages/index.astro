@@ -11,111 +11,119 @@ import dashboardFeature from '../images/dashboard-feature.png';
 ---
 
 <Layout title="Repohistory - A GitHub repo traffic history tracker">
-	<NavBar />
-	<main class="flex flex-col items-center">
-		<div class="absolute top-0 inset-x-0 m-auto h-32 max-w-xl
-			bg-gradient-to-tr from-[#62C3F8] via-blue-400 to-blue-900 blur-[130px]" />
-		<div class="flex flex-col items-center gap-4 px-5">
-			<h1 class="pt-20 text-center text-6xl font-bold leading-tight text-white sm:pt-36 md:text-7xl">
-			<div>Effortless Tracking</div>
-				<div
-					class="bg-gradient-to-b from-blue-300 to-[#62C3F8]
-					  inline-block pb-5 text-transparent bg-clip-text"
-					>
-					Timeless Insights
-				</div>
-			</h1>
-			<h2 class="mb-5 max-w-3xl text-center text-[#a0a0a1] text-lg">
-        Repohistory is an open-source dashboard for tracking GitHub repo traffic history longer than 14 days, with a sleek UI for comprehensive long-term data insights.
-			</h2>
-			<div class="flex gap-3">
-				<div class="relative group">
-					<div class="transition-opacity ease duration-200 opacity-0
-						group-hover:opacity-100 absolute bg-gradient-to-t from-[#62C3F8]
-						via-blue-400  w-32 h-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-xl" />
-					<a
-						class="w-32 h-12 bg-[#62C3F8] flex items-center relative z-10 justify-center
-						  rounded-md text-black font-medium transition"
-						href="https://app.repohistory.com/login"
-						>
-						Get Started
-					</a>
-				</div>
-				<a
-					class="w-32 h-12 border border-[#62C3F8] text-[#62C3F8] flex items-center relative z-10 justify-center
-					rounded-md font-medium transition"
-					href="https://github.com/repohistory/repohistory"
-					>
-					Star on GitHub
-				</a>
-			</div>
+  <NavBar />
+  <main class="flex flex-col items-center">
+    <div
+      class="absolute inset-x-0 top-0 m-auto h-32 max-w-xl
+			bg-gradient-to-tr from-[#62C3F8] via-blue-400 to-blue-900 blur-[130px]"
+    >
+    </div>
+    <div class="flex flex-col items-center gap-4 px-5">
+      <h1
+        class="pt-20 text-center text-6xl font-bold leading-tight text-white sm:pt-36 md:text-7xl"
+      >
+        <div>Effortless Tracking</div>
+        <div
+          class="inline-block bg-gradient-to-b from-blue-300
+					  to-[#62C3F8] bg-clip-text pb-5 text-transparent"
+        >
+          Timeless Insights
+        </div>
+      </h1>
+      <h2 class="mb-5 max-w-3xl text-center text-lg text-[#a0a0a1]">
+        Repohistory is an open-source dashboard for tracking GitHub repo traffic
+        history longer than 14 days, with a sleek UI for comprehensive long-term
+        data insights.
+      </h2>
+      <div class="flex gap-3">
+        <div class="group relative">
+          <div
+            class="ease absolute left-1/2 top-1/2
+						h-10 w-32 -translate-x-1/2 -translate-y-1/2
+						bg-gradient-to-t from-[#62C3F8] via-blue-400 opacity-0 blur-xl transition-opacity duration-200 group-hover:opacity-100"
+          >
+          </div>
+          <a
+            class="relative z-10 flex h-12 w-32 items-center justify-center rounded-md
+						  bg-[#62C3F8] font-medium text-black transition"
+            href="https://app.repohistory.com/login"
+          >
+            Get Started
+          </a>
+        </div>
+        <a
+          class="relative z-10 flex h-12 w-32 items-center justify-center rounded-md border border-[#62C3F8]
+					font-medium text-[#62C3F8] transition"
+          href="https://github.com/repohistory/repohistory"
+        >
+          Star on GitHub
+        </a>
+      </div>
       <div class="relative my-20">
         <Image
-          class="mx-auto w-[90%] sm:w-[80%] relative z-10 rounded-xl border border-[#303031]"
+          class="relative z-10 mx-auto w-[90%] rounded-xl border border-[#303031] sm:w-[80%]"
           alt="screenshot of repohistory"
           src={demoImage}
         />
       </div>
-		</div>
-    <div class="w-[80%] my-20 flex flex-col lg:flex-row gap-5 text-white">
-      <div class="absolute z-0 left-1/3 inset-x-0 m-auto h-20 max-w-xl
-        bg-gradient-to-bl from-[#62C3F8] via-blue-400 to-cyan-700 blur-[100px]" />
+    </div>
+    <div class="my-20 flex w-[80%] flex-col gap-5 text-white lg:flex-row">
       <div
-        class="flex flex-col z-10 gap-2 lg:w-1/3 p-10 rounded-lg transition-all
-          border border-[#303031] hover:border-[#999999] bg-black bg-opacity-20"
+        class="absolute inset-x-0 left-1/3 z-0 m-auto h-20 max-w-xl
+        bg-gradient-to-bl from-[#62C3F8] via-blue-400 to-cyan-700 blur-[100px]"
+      >
+      </div>
+      <div
+        class="z-10 flex flex-col gap-2 rounded-lg border border-[#303031] bg-black
+          bg-opacity-20 p-10 transition-all hover:border-[#999999] lg:w-1/3"
       >
         <div class="flex items-center justify-between gap-5">
-          <div class="font-semibold">
-            Traffic Tracking
-          </div>
+          <div class="font-semibold">Traffic Tracking</div>
           <Image
             class="w-10 rounded-md border border-[#303031]"
             alt="icon of star feature"
             src={trafficFeature}
           />
         </div>
-        <div class="text-[#999999] text-sm">
+        <div class="text-sm text-[#999999]">
           Start tracking clones and views data from your first login.
         </div>
       </div>
       <div
-        class="flex flex-col z-10 gap-2 lg:w-1/3 p-10 rounded-lg transition-all
-          border border-[#303031] hover:border-[#999999] bg-black bg-opacity-20"
+        class="z-10 flex flex-col gap-2 rounded-lg border border-[#303031] bg-black
+          bg-opacity-20 p-10 transition-all hover:border-[#999999] lg:w-1/3"
       >
         <div class="flex items-center justify-between gap-5">
-          <div class="font-semibold">
-            All-Time Stars History
-          </div>
+          <div class="font-semibold">All-Time Stars History</div>
           <Image
             class="w-10 rounded-md border border-[#303031]"
             alt="icon of star feature"
             src={starFeature}
           />
         </div>
-        <div class="text-[#999999] text-sm">
-          Visualize the growth of your repo with an all-time stars history graph.
+        <div class="text-sm text-[#999999]">
+          Visualize the growth of your repo with an all-time stars history
+          graph.
         </div>
       </div>
       <div
-        class="flex flex-col gap-2 z-10 lg:w-1/3 p-10 rounded-lg transition-all
-          border border-[#303031] hover:border-[#999999] bg-black bg-opacity-20"
+        class="z-10 flex flex-col gap-2 rounded-lg border border-[#303031] bg-black
+          bg-opacity-20 p-10 transition-all hover:border-[#999999] lg:w-1/3"
       >
         <div class="flex items-center justify-between gap-5">
-          <div class="font-semibold">
-            Dashboard Overview
-          </div>
+          <div class="font-semibold">Dashboard Overview</div>
           <Image
             class="w-10 rounded-md border border-[#303031]"
             alt="icon of star feature"
             src={dashboardFeature}
           />
         </div>
-        <div class="text-[#999999] text-sm">
+        <div class="text-sm text-[#999999]">
           Easily access a dashboard view for an overview of all your projects.
         </div>
       </div>
     </div>
-		<Faq />
-	</main>
-	<Footer />
+    <Faq />
+  </main>
+  <Footer />
 </Layout>
