@@ -1,0 +1,12 @@
+---
+import Layout from './Layout.astro';
+import Prose from '../components/Prose.astro';
+const { frontmatter } = Astro.props;
+---
+
+<Layout title="Repohistory">
+  <Prose>
+    <h1>{frontmatter.title}</h1>
+    <slot />
+  </Prose>
+</Layout>
